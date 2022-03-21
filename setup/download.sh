@@ -2,6 +2,7 @@
 
 ROOT=$PWD
 DATA_DIR="data"
+mkdir -p $DATA_DIR
 
 # scibert
 cd $DATA_DIR
