@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOME=$PWD
+ROOT=$PWD
 DATA_DIR="data"
 
 # scibert
@@ -11,7 +11,7 @@ rm scibert_scivocab_cased.tar
 cd scibert_scivocab_cased
 tar -xvf weights.tar.gz
 rm weights.tar.gz
-cd $HOME
+cd $ROOT
 
 # gpt2
 cd $DATA_DIR
@@ -27,7 +27,7 @@ mv gpt2-pytorch_model.bin pytorch_model.bin
 mv gpt2-vocab.json vocab.json
 mv gpt2-merges.txt merges.txt
 mv gpt2-config.json config.json
-cd $HOME
+cd $ROOT
 
 # BioVAE
 BIOVAE_DIR="data/biovae"
@@ -45,6 +45,6 @@ tar -xvf pm-full-lt32-beta00.tar.gz
 tar -xvf pm-full-generation.tar.gz
 rm *.tar.gz
 
-cd $HOME
+cd $ROOT
 
 echo "Done!"

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Original file: https://github.com/allenai/scibert/blob/master/scripts/train_allennlp_local.sh
 
-HOME=$PWD
+ROOT=$PWD
 
 export SCIBERT_DIR="scibert"
 cd $SCIBERT_DIR
@@ -55,4 +55,4 @@ export CUDA_DEVICE=0
 
 python -m allennlp.run train $CONFIG_FILE  --include-package scibert -s "../results/$TASK/$DATASET/$MODEL_NAME"
 
-cd $HOME
+cd $ROOT

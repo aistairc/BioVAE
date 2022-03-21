@@ -1,8 +1,8 @@
 #!/bin/bash
 
-HOME=$PWD
+ROOT=$PWD
 
-export PYTHONPATH="${PYTHONPATH}:$HOME/Optimus/code"
+export PYTHONPATH="${PYTHONPATH}:$ROOT/Optimus/code"
 
 # model paths
 export MODEL_NAME=pm-full-generation
@@ -37,5 +37,5 @@ python Optimus/code/examples/big_ae/run_latent_generation.py \
     --latent_size=$LATENT_SIZE \
     --play_mode reconstrction
 
-cd $HOME
+cd $ROOT
 echo "Done reconstrction."

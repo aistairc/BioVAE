@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOME=$PWD
+ROOT=$PWD
 
 # OPTIMUS
 echo "Clone OPTIMUS"
@@ -17,7 +17,7 @@ git checkout fp16_and_others
 pip install -e .
 
 # install Python dependencies
-cd $HOME
+cd $ROOT
 pip install -r setup/requirements.txt
 
 echo "Done!"
