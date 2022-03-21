@@ -11,6 +11,12 @@
 
 2. Requirement
 - Python 3.6
+```bash
+module load gcc/7.4.0
+module load cuda/10.2/10.2.89
+module load cudnn/8.1/8.1.1
+module load nccl/2.8/2.8.4-1
+```
 
 3. Training script
 - Training script: we train the model based on the OPTIMUS's script: [run_lm_vae_pretraining_phdist_beta.py](https://github.com/ChunyuanLI/Optimus/blob/master/code/examples/big_ae/run_lm_vae_pretraining_phdist_beta.py)
